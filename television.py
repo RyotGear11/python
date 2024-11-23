@@ -40,6 +40,7 @@ class Television:
         if self.__status:
             if self.__muted:
                 self.__muted = False
+                self.__volume = self.__volume
             else:
                 self.__muted = True
                 self.__volume = Television.MIN_VOLUME
