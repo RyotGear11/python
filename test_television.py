@@ -74,9 +74,9 @@ class Test:
         self.tv.volume_up()
         self.tv.volume_down()
         assert self.tv.__str__() == 'Power = True, Channel = 0, Volume = 1'
-        # self.tv.mute()
-        # self.tv.volume_down()
-        # assert self.tv.__str__() == 'Power = True, Channel = 0, Volume = 0'
+        self.tv.mute()
+        self.tv.volume_down()
+        assert self.tv.__str__() == 'Power = True, Channel = 0, Volume = 0'
         self.tv.volume_down()
         self.tv.volume_down()
         self.tv.volume_down()
